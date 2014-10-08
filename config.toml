@@ -1,0 +1,25 @@
+bind-address = "0.0.0.0"
+
+[logging]
+level  = "warn"
+file   = "stdout"
+
+[admin]
+port   = 8083
+assets = "./admin"
+
+[api]
+port = 8086
+read-timeout = "5s"
+
+[raft]
+port = 8090
+dir  = "/influxdb/raft"
+
+# election-timeout = "1s"
+
+[storage]
+dir = "/influxdb/db"
+
+[wal]
+dir   = "/influxdb/wal"
